@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="row">
+    <div class="col-xs-12" style="background-color: #8dcfd8; padding: 20px;">
+ <form method="POST" id="/contacto" action="/contacto">
+      <label for="cliente">Cliente:</label>
+      <input type="text" name="cliente" id="cliente" required /><br /><br />
+
+      <label for="fecha">Fecha:</label>
+      <input type="date" name="fecha" id="fecha" required /><br /><br />
+
+      <label for="descripcion">Productos:</label> <br />
+      <textarea
+        name="descripcion"
+        id="descripcion"
+        rows="5"
+        cols="30"
+      ></textarea
+      ><br /><br />
+
+      <label for="estado">Estado:</label>
+      <select name="estado" id="estado">
+        <option value="cerrado">Cerrado</option>
+        <option value="Pendiente">Pendiente</option>
+        <option value="Pago_realizado">Pago realizado</option></select
+      ><br /><br />
+
+      <label for="tipo">Tipo:</label>
+      <select name="tipo" id="tipo">
+        <option value="telefono">Teléfono</option>
+        <option value="email">Email</option>
+        <option value="reunion_presencial">Reunión Presencial</option>
+        <option value="reunion_virtual">Reunión Virtual</option></select
+      ><br /><br />
+
+      <input type="submit" value="Enviar" />
+    </form> <hr>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/XvoWerP5J7hqpw"
+    crossorigin="anonymous"
+  ></script>
+		
+</body>
+</html>
